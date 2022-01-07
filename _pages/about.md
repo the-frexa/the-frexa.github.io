@@ -5,29 +5,24 @@ permalink: /about
 comments: true
 ---
 
-<div class="row justify-content-between">
-<div class="col-md-8 pr-5">
 
-<p>This is a technology and science blog maintained by 5 friends united by BITS Pilani</p>
+
+This is a technology and science blog maintained by 5 friends united by BITS Pilani
 
 <!--<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>-->
-<h4>Members</h4>
+## Members
+
+- Abhirath Anand
+- Ameya Deshmukh
+- Rohan Srinivasan
+- Samriddha Sinha
+- Srijan Shashwat
+
+## Suggestions?
+
+Get in touch with our socials or drop a mail at frexablog [AT] gmail [DOT] com.
 
 
-<ul>
-<li>Abhirath Anand
-<li>Ameya Deshmukh
-<li>Rohan Srinivasan
-<li>Samriddha Sinha
-<li>Srijan Shashwat
-</ul>
-
-
-<h4>Suggestions?</h4>
-
-<p>Get in touch with our socials or drop a mail at frexablog [AT] gmail [DOT] com</p>
-
-</div>
 
 <!--<div class="col-md-4">
 
@@ -40,4 +35,4 @@ comments: true
 
 </div>
 </div>-->
-</div>
+
