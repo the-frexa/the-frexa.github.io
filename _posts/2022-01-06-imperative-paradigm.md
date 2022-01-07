@@ -2,8 +2,9 @@
 layout: post
 title:  "A brief introduction to the Imperative Programming Paradigm"
 author: abhirath
-categories: [ Jekyll, tutorial ]
+categories: [ programming, languages, procedural, imperative, functional ]
 image: assets/images/hello.png
+featured: true
 ---
 
 When learning to code for the first time, it can be overwhelming to see terms like **functional** or **object-oriented** be thrown around by more experienced programmers. In this series of articles, I wanted to give a brief overview of what these paradigms actually mean, and demonstrate some very small programs implementing some of these. These articles are not meant to be comprehensive in any fashion, although I do go over the most common paradigms and try to give you a sense of what they mean.

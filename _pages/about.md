@@ -8,20 +8,28 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>This is a technology and science blog maintained by 5 friends united by BITS Pilani</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+<!--<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>-->
+<h4>Members</h4>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+<p>
+<ul>
+<li>Abhirath Anand
+<li>Ameya Deshmukh
+<li>Rohan Srinivasan
+<li>Samriddha Sinha
+<li>Srijan Shashwat
+</ul>
+</p>
 
-<h4>Questions or bug reports?</h4>
+<h4>Suggestions?</h4>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p>Get in touch with our socials or drop a mail at frexablog [AT] gmail [DOT] com</p>
 
 </div>
 
-<div class="col-md-4">
+<!--<div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
 <h5>Buy me a coffee</h5>
@@ -31,5 +39,5 @@ comments: true
 <a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
 
 </div>
-</div>
+</div>-->
 </div>
