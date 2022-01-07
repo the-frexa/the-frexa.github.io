@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About Frexa
 permalink: /about
 comments: true
 ---
@@ -13,7 +13,7 @@ comments: true
 <!--<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>-->
 <h4>Members</h4>
 
-<p>
+
 <ul>
 <li>Abhirath Anand
 <li>Ameya Deshmukh
@@ -21,7 +21,7 @@ comments: true
 <li>Samriddha Sinha
 <li>Srijan Shashwat
 </ul>
-</p>
+
 
 <h4>Suggestions?</h4>
 
