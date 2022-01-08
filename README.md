@@ -12,7 +12,7 @@ This is a technology and science blog maintained by 5 friends united by BITS Pil
 
 ## Suggestions?
 
-Get in touch with our socials or drop a mail at frexablog [AT] gmail [DOT] com.
+Get in touch with our socials or drop a mail at [frexablog@gmail.com](mailto:frexablog@gmail.com).
 
 ## License
 
