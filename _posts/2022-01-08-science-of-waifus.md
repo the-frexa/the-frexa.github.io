@@ -40,7 +40,7 @@ Here it is important to mention the point of waifus. It is an attachment to a ch
 
 Today, anime is big outside Japan. It has reached higher acceptance levels across communities. However, it does mean the waifu epidemic has well and truly spread. Outsiders might believe that waifu literally means wife, so it is okay to sexualise characters that might be like ten or eleven. Online communities get enraged to social media when their collective waifu is disfavoured in the show, spreading vitriol on the creators' socials. Not cool.
 
-![kanna](/assets/images/kanna_article.png)
+![kanna](/assets/images/kanna_article.jpeg)
 > Protect, don't fight over
 
 I don't have a solution to the epidemic. I can only hope people enjoy the shows, not getting caught up in defending their waifu on social media.
