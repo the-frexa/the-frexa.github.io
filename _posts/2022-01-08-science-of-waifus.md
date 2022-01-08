@@ -11,7 +11,7 @@ So if you have been around the anime community long enough, you surely have hear
 
 # What is a Waifu?
 
-![rias](assets/images/rias_article.jpg)
+![rias](/assets/images/rias_article.jpg)
 
 'Waifu' probably comes from the Japanese pronunciation of the English 'wife'. However, it does not mean a literal wife. The character might simply be the most liked by the person, either romantically or non-romantically. A waifu can be an anime character, but can also come from games (like Genshin Impact). VTubers are also waifu-able. Hardcore fans of said character might buy merchandise like figurines and posters, deepening their affection for their waifu.
 
