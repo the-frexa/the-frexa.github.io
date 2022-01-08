@@ -1,0 +1,243 @@
+I"s`<p>When learning to code for the first time, it can be overwhelming to see terms like <strong>functional</strong> or <strong>object-oriented</strong> be thrown around by more experienced programmers. In this series of articles, I wanted to give a brief overview of what these paradigms actually mean, and demonstrate some very small programs implementing some of these. These articles are not meant to be comprehensive in any fashion, although I do go over the most common paradigms and try to give you a sense of what they mean.</p>
+
+<p>In this article, I go over what a programming paradigm is and specifically dive into the <strong>imperative programming paradigm</strong>. I assume basic familiarity with Python. For ease of demonstration, I have also included examples from several other programming languages, but these can be understood on some reading even if you are not familiar with the exact syntax. If you have any doubts about the same, you can always look it up on Google — these languages are very well documented.</p>
+
+<p>Without further ado, let’s dive right in!</p>
+
+<hr />
+
+<p>What is a <strong>programming paradigm?</strong></p>
+
+<p>Simply put, it is a way to classify programming languages based on their features. Some paradigms deal with the <strong>execution model</strong>, the way in which each line of code is executed. Others are concerned with organisation, such as grouping code into specific units.</p>
+
+<p>There are many types of programming paradigms for classifying programs using various criteria, but there are a few things to keep in mind:</p>
+
+<ol>
+  <li>While there is a broad agreement over how these paradigms work and which languages come under which, many of the specifics are hotly debated over. In reality, these paradigms are idealisations that are seldom achieved — most programming languages are built on multiple paradigms working together.</li>
+  <li>You may see several heated debates over some paradigms being better than others on the internet. But it is important to remember that which paradigm you use while designing a program depends on what you want to accomplish with it, and how comfortable you yourself are with the paradigm in question.</li>
+</ol>
+
+<hr />
+
+<p>Any computer program stores data in variables, which represent storage locations in a computer’s memory. The contents of these memory locations, at any given point in the program’s execution, is called the program’s <strong>state</strong><em>.</em></p>
+
+<p><em>Imperative Programming</em> is a paradigm in which programs are composed of <strong>statements</strong> that change a program’s state. An imperative program consists of commands for the computer to perform. Imperative programming focuses on describing <em>how</em> a program operates.</p>
+
+<p>The most popular programming languages are all imperative, and the rationale behind this is that the implementation of computer hardware itself is in an imperative fashion. Both machine code and assembly are written in an imperative style, where the program state is described by the contents of memory and the statements carry out various operations on these contents.</p>
+
+<p>Here too, two sub-paradigms exist: <strong>procedural</strong> and <strong>object-oriented</strong> programming.</p>
+
+<h1 id="procedural-programming">Procedural programming</h1>
+
+<p>This is a type of imperative programming in which the program is built from one or more <strong>procedures</strong>, also called <strong>subroutines</strong> or <strong>functions.</strong> A subroutine is simply a sequence of program instructions that performs a specific task, packaged as a unit. This unit can then be used in programs wherever that particular task should be performed.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="cp">#include &lt;stdio.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">add</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">){</span>
+  <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> 
+  <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">sum</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>A simple program to return the sum of two numbers via a procedure <code>add</code> that takes two arguments.</p>
+
+<p>The above example, written in C, is an example of the implementation of the procedural paradigm — a procedure was used to add the two numbers, and the return value was assigned to a new variable. Each line of the program represents a change in the state of the program, as you will realise on careful reading.</p>
+
+<h1 id="object-oriented-programming-oop">Object-Oriented Programming (OOP)</h1>
+
+<p>The most popular programming paradigm in software engineering. It relies on <strong>objects:</strong> which are abstract, custom structures that contain both data <strong>fields</strong> (also referred to as <strong>attributes</strong> or <strong>properties</strong>)<strong>,</strong> for storing information, and <strong>methods,</strong> which are procedures that are specific to an object that can be used to modify or access it. In most commonly-used languages, this is associated with <strong>classes,</strong> which are blueprints for creating an <em>instance</em> of an object.</p>
+
+<p>That seems very technical. So let’s deal with an example. A class is probably the equivalent of whatever secret recipe Elon Musk stores in his locker for building Mars rockets. And an object is an instance of that class: a <em>particular</em> rocket, like the Big Falcon or Starhopper.</p>
+
+<p>(The more technically correct among you just gasped because the two instances of the same object that I’ve written about are nothing alike, and I realise that 😜. I’m just trying to abstract away the technicality as much as I can so that people can easily understand what’s going on under the hood.)</p>
+
+<p>Some of the most important features of the OOP paradigm are described below:</p>
+
+<h2 id="message-passing">Message Passing</h2>
+
+<p>Message passing is a technique for invoking behaviour (i.e., running a program) on a computer. In contrast to the traditional technique of calling a program by name, message passing uses an object model to distinguish the general function from the specific implementations. The invoking program sends a message and relies on the object to select and execute the appropriate code.</p>
+
+<p>Now, that sounds like a lot of words, but it really isn’t very complicated. All it wants to say is that instead of one program containing all the functions that we need for a sophisticated system to work, an intermediate program is designed to pass <em>messages</em> — or in other words, information regarding <em>what</em> functions are to be called with what parameters— to objects that have been implemented in other programs. The key idea here is that the intermediate program needs to have no knowledge whatsoever of how the main function is being implemented — it relies on the <em>object</em> to execute that code successfully and return the answer.</p>
+
+<p>Considered to be among the most vital features for an object-oriented paradigm, message passing is used <em>everywhere</em> in modern software. It is among the many features used that allow computers to interact via networks such as the Internet.</p>
+
+<h2 id="encapsulation">Encapsulation</h2>
+
+<p>Encapsulation is a concept where data and the methods that manipulate the data are bound together into a class. This lends itself to <em>information hiding,</em> which is of critical importance in many fields. In languages such as Java, classes can explicitly enforce restrictions by using the keywords <code class="language-plaintext highlighter-rouge">private</code>, <code class="language-plaintext highlighter-rouge">public</code> and <code class="language-plaintext highlighter-rouge">protected</code>. In some other languages, this is not enforced strictly but rather as a convention (such as using names that begin with an underscore for private methods or variables in Python).</p>
+
+<p>Encapsulation is the guiding principle behind a class <strong>interface.</strong> The interface is what any code outside of the class sees the class as; thus, private variables and methods are hidden, and specific methods are implemented to control access (<strong>getters</strong> or <strong>accessors</strong>) and modification (<strong>setters</strong> or <strong>mutators</strong>). An interface is particularly useful as a way to abstract away a lot of the code behind the scenes and deal with a “black box” where we are only concerned with the specific outputs that we get for specific inputs.</p>
+
+<p>An interesting example to illustrate the concept of encapsulation would be a television set from the ’90s. The particular model of the television in front of you is an <em>instance</em> of a more general <em>class</em> of televisions_;_ the buttons that one can press on the front of the screen are the <em>methods</em> that compose the interface. The screen shows you <em>visual data</em> that is also associated with the interface; and finally, the processes that run behind the screen which cannot be seen by you are akin to <em>private</em> methods.</p>
+
+<p>One final use of encapsulation before we move on: it allows programmers to group all code related to a certain set of data in one single class, making organisation easier and resulting in better comprehension when read by other programmers.</p>
+
+<h2 id="inheritance">Inheritance</h2>
+
+<p>Inheritance is a concept where classes can be organised into a hierarchy. This is best demonstrated by an example — a class <code class="language-plaintext highlighter-rouge">Lizard</code> may <em>inherit</em> both data and methods from a class <code class="language-plaintext highlighter-rouge">Reptile,</code>  since a lizard is a “subclass” of a reptile.</p>
+
+<p>Inheritance also allows you to add new variables or methods to subclasses — for example, an <code class="language-plaintext highlighter-rouge">Employee</code> class that derives from a <code class="language-plaintext highlighter-rouge">Person</code> class will inherit the <code class="language-plaintext highlighter-rouge">first_name</code> and <code class="language-plaintext highlighter-rouge">last_name</code> attributes (as well as a method <code class="language-plaintext highlighter-rouge">get_full_name</code> that returns the full name of the person), but will also probably define new variables <code class="language-plaintext highlighter-rouge">position</code> and <code class="language-plaintext highlighter-rouge">salary</code> for an accurate representation. This allows programmers to mirror real-world relationships as code objects very easily and intuitively.</p>
+
+<p>Where inheritance truly reveals its power is in the ability to be able to override methods from the ‘superclass’ for specific subclasses (for example, in an <code class="language-plaintext highlighter-rouge">Ostrich</code> class that inherits from a <code class="language-plaintext highlighter-rouge">Bird</code> class, you might want to override the <code class="language-plaintext highlighter-rouge">Flight</code> method so as to prevent people from questioning your knowledge of zoology).</p>
+
+<p>Another extremely useful feature of inheritance is to allow the creation of <strong>abstract classes</strong>, which are classes that cannot be directly instantiated to form objects. Instead, other <strong>concrete classes</strong> that <em>can</em> be instantiated to give objects inherit from them.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>  
+    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+        <span class="k">print</span><span class="p">(</span><span class="s">"Animal Speaking"</span><span class="p">)</span>  
+        
+<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>  
+    <span class="k">def</span> <span class="nf">bark</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  
+        <span class="k">print</span><span class="p">(</span><span class="s">"dog barking"</span><span class="p">)</span>  
+<span class="n">d</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>  
+<span class="n">d</span><span class="p">.</span><span class="n">bark</span><span class="p">()</span> <span class="c1"># prints "dog barking"  
+</span><span class="n">d</span><span class="p">.</span><span class="n">speak</span><span class="p">()</span> <span class="c1"># prints "Animal Speaking"
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>An example of single inheritance in Python. The method speak was never explicitly defined for the class <code class="language-plaintext highlighter-rouge">Dog</code>, but it inherited it from the superclass <code class="language-plaintext highlighter-rouge">Animal</code>.</p>
+
+<p>The implementation of inheritance varies across languages — some allow only for <strong>single inheritance</strong>, i.e. a class can have only one superclass. Others allow for limited multiple inheritance; and some, like Go, do not allow inheritance at all.</p>
+
+<h2 id="polymorphism">Polymorphism</h2>
+
+<p>Polymorphism can be used to refer to several different ideas that are closely related, but the two ideas that objects use most often are <strong>function</strong> or <strong>operator overloading,</strong> and <strong>subtyping.</strong></p>
+
+<p>In function overloading, the same method behaves differently when applied to different arguments based on their <em>type</em>. The most commonly used example for this is addition behaving differently for different arguments, such as the following use-cases:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">1 + 2 = 3</code></li>
+  <li><code class="language-plaintext highlighter-rouge">3.14 + 0.0015 = 3.1415</code></li>
+  <li><code class="language-plaintext highlighter-rouge">1 + 3.7 = 4.7</code></li>
+  <li><code class="language-plaintext highlighter-rouge">[1, 2, 3] + [4, 5, 6] = [1, 2, 3, 4, 5, 6]</code></li>
+  <li><code class="language-plaintext highlighter-rouge">[true, false] + [false, true] = [true, false, false, true]</code></li>
+  <li><code class="language-plaintext highlighter-rouge">"bab" + "oon" = "baboon"</code></li>
+</ol>
+
+<p>To handle these six function calls, four different pieces of code are needed</p>
+
+<ul>
+  <li>In the first case, integer addition must be invoked.</li>
+  <li>In the second and third cases, floating-point addition must be invoked (with implicit type casting in the third case).</li>
+  <li>In the fourth and fifth cases, list concatenation must be invoked.</li>
+  <li>In the last case, string concatenation must be invoked.</li>
+</ul>
+
+<p>This can be achieved via implementing the addition function as a method separately for each type: integer, floating-point, list and string — and defining them to have different meanings based on the type of the example passed.</p>
+
+<p>Another example of polymorphism is via subtyping, where programming languages allow a function that takes an argument of a particular type to work correctly even if a <em>subtype</em> (in OOP, this would mean an object of a subclass of the original class) is passed to it.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="rouge-code"><pre><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="kd">abstract</span> <span class="nc">String</span> <span class="nf">talk</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="nf">talk</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">"Meow!"</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="nc">String</span> <span class="nf">talk</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">"Woof!"</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">static</span> <span class="kt">void</span> <span class="nf">letsHear</span><span class="o">(</span><span class="kd">final</span> <span class="nc">Animal</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">talk</span><span class="o">());</span>
+<span class="o">}</span>
+
+<span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">letsHear</span><span class="o">(</span><span class="k">new</span> <span class="nc">Cat</span><span class="o">());</span>
+    <span class="n">letsHear</span><span class="o">(</span><span class="k">new</span> <span class="nc">Dog</span><span class="o">());</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>An example of both types of polymorphism in Java. Function overloading has been used with the function <code class="language-plaintext highlighter-rouge">talk</code>, while subtyping has been used with <code class="language-plaintext highlighter-rouge">letsHear</code>.</p>
+
+<p>The choice of which version of a method to call may be based either on a single object, or on a combination of objects. In most languages such as C++, Java and Python, the method is called based on a single object and is called <strong>single dispatch.</strong> For example, consider the code:</p>
+
+<p><code class="language-plaintext highlighter-rouge">md {linenos = false}
+dividend.divide(divisor)
+</code></p>
+
+<p>Building on an earlier concept, this can be thought of as <em>sending a message</em> named <code class="language-plaintext highlighter-rouge">divide</code> with a parameter <code class="language-plaintext highlighter-rouge">divisor</code> to the object <code class="language-plaintext highlighter-rouge">dividend</code>. The version of the function division that has to be implemented depends only on the type of the <em>dividend</em>, since the method being called belongs to the class that <code class="language-plaintext highlighter-rouge">dividend</code> is an object of (we inferred this from the <strong>dot</strong> notation, which is used to access any methods/variables that belong to an object).</p>
+
+<p>A more powerful method of polymorphism called <strong>multiple dispatch</strong> is used in languages such as Common Lisp and Julia. The implementation of polymorphism in those cases is <em>not</em> object-based. This just leads me to tell you that all the features of OOP that we have covered here are not exclusive to OOP, nor are they all present in the same form (or at all) in different languages’ implementation of OOP. But these are definitely among the more popular features of which I have attempted to give you an overview without delving too deep into the rabbit hole. This leads me to one final feature…</p>
+
+<h2 id="open-recursion">Open Recursion</h2>
+
+<p>This is the ability for one method to invoke another method of the same object via a special variable called <code class="language-plaintext highlighter-rouge">self</code> (Python) or, in some languages, <code class="language-plaintext highlighter-rouge">this</code> (Java). The special behaviour of <code class="language-plaintext highlighter-rouge">self</code> is that it is <em>late-bound.</em> In late binding, the method being called upon an object is looked up by name at runtime. In other words, a name is associated with a particular operation or object at runtime, rather than during compilation. This allows a method defined in one class to invoke another method that is defined later.</p>
+
+<p>Whew! That’s a lot of words. So what do I want to say over here?</p>
+
+<p>Well, when you write functions outside of an object i.e. not as a method, but as a subroutine — then one of the major challenges that you might face is when you have a bunch of functions that all somehow refer to each other. Say there is a function <code class="language-plaintext highlighter-rouge">f1</code> that calls <code class="language-plaintext highlighter-rouge">f2</code> and <code class="language-plaintext highlighter-rouge">f3</code>, <code class="language-plaintext highlighter-rouge">f2</code> itself calls <code class="language-plaintext highlighter-rouge">f3</code> and <code class="language-plaintext highlighter-rouge">f3</code> calls <code class="language-plaintext highlighter-rouge">f1</code>.</p>
+
+<p>Well, if you try to write this out in linear fashion outside of an object, in any possible order of functions, you will face a problem. And that problem is that no matter which order you choose, one of the functions getting called will not have been defined when it is called. And the program will be <em>very</em> upset with you.</p>
+
+<p>So what is the solution? <em>Open recursion</em>. The recursion here isn’t literal — well, you <em>could</em> theoretically write three functions as I’ve mentioned above, but it isn’t exactly the most common use case. But there <em>are</em> instances in which you want all the functions defined in one block to be able to <em>see</em> each other, if you will, and therefore be able to call each other as well. This is what open recursion allows you to do.</p>
+
+<hr />
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>So…this article was heavy. <em>Very</em> heavy. In fact, if you’d made it this far, I’d like to thank you for continuing to read through till the end. It’s readers like you who inspire me to continue writing.</p>
+
+<p>In the next article, I will be introducing the concept of <strong>scope</strong> in programming languages. I’m taking a little detour through some concepts in programming languages before we return to talk about declarative programming. Until next time!</p>
+
+<hr />
+
+<p><em>Thanks for reading! I hope you’ve enjoyed reading this article. You can find me on</em> <a href="https://www.linkedin.com/in/theabhirathanand/"><em>Linkedin</em></a><em>,</em> <a href="https://twitter.com/theabhirath"><em>Twitter</em></a> <em>and</em> <a href="http://github.com/theabhirath"><em>GitHub</em></a>.</p>
+:ET
