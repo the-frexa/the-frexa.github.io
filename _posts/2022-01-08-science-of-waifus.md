@@ -4,7 +4,6 @@ title:  "The Science of Anime Waifus"
 author: samriddha
 categories: [ anime, waifu, pop culture]
 image: assets/images/tohru_article.png
-featured: true
 ---
 
 So if you have been around the anime community long enough, you surely have heard of the term "waifu". Declarations like "She's my waifu!" might make you wonder what does it even mean to marry a character, and why does the said person express such keen interest in 2D characters. In this article I try to demystify the appeal of anime girls, with science of course.
