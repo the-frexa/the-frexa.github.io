@@ -32,6 +32,15 @@ authors:
     web: https://theabhirath.github.io
     twitter: https://twitter.com/theabhirath
     description: "Enthusiastic about ML and its applications"
+  srijan:
+    name: Srijan
+    display_name: Srijan   
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: srij02@gmail.com
+    web: 
+    twitter: 
+    description: "Economics nerd, who happens to do a CS major too"
 
 # Plugins
 plugins:
