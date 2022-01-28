@@ -41,6 +41,15 @@ authors:
     web: 
     twitter: 
     description: "Economics nerd, who happens to do a CS major too"
+  ameya:
+    name: Ameya
+    display_name: Ameya   
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: f20200139@pilani.bits-pilani.ac.in
+    web: 
+    twitter: 
+    description: "Blockchain, Web3, Startups"  
 
 # Plugins
 plugins:
