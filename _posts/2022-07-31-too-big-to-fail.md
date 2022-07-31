@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Real Estate - Analysis of Human Behaviour"
+title:  "Too Big to Fail"
 author: srijan
 categories: [ macroeconomics, banking, economics, behavioural economics ]
-image: assets/images/re_article.jpg
+image: assets/images/tbtf_article.jpg
 featured: true
 ---
 
