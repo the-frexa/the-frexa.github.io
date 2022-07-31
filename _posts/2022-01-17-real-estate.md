@@ -4,7 +4,7 @@ title:  "Real Estate - Analysis of Human Behaviour"
 author: srijan
 categories: [ real estate, economics, behavioural economics ]
 image: assets/images/re_article.jpg
-featured: true
+featured: false
 ---
 
 At some point in the recent past, most of our families have wanted to, or actually have, invested in real estate. For a large part of middle-class families in developed and developing economies of the world, real estate appears to be a worthy investment, often yielding positive returns. However, real estate has indeed been studied for decades, and as many of you might already know, it has created some disastrous bubbles and crises (looking at you, 2007-08). 
