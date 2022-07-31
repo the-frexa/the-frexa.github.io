@@ -3,7 +3,7 @@ layout: post
 title:  "Too Big to Fail"
 author: srijan
 categories: [ macroeconomics, banking, economics, behavioural economics ]
-image: assets/images/tbtf_article.jpeg
+image: assets/images/tbtf.jpeg
 featured: true
 ---
 
