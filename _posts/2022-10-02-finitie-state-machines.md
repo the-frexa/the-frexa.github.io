@@ -4,6 +4,7 @@ title: "Finite State Machines"
 author: rohan
 categories: [computer science, programming]
 image: assets/images/index.png
+usemathjax: true
 featured: true
 ---
 
