@@ -23,6 +23,15 @@ authors:
     web: https://sam-india-007.github.io
     twitter: https://twitter.com/samriddhasinha
     description: "SDNs, WebD, Anime"
+  rohan:
+    name: Rohan
+    display_name: Rohan    
+    avatar: 'assets/images/avatar.png'
+    gravatar: c14aa45bff5810ad5dc3e58dade8a2ac
+    email: f20200081@pilani.bits-pilani.ac.in
+    web: 
+    twitter: 
+    description: "Exploring ML/AI and Formal Methods of Computer Science"
   abhirath:
     name: Abhirath
     display_name: Abhirath    
