@@ -3,11 +3,9 @@ layout: post
 title: "Finite State Machines"
 author: rohan
 categories: [computer science, programming]
-image: assets/images/le4joppdnt631.png
+image: assets/images/index.png
 featured: true
 ---
-
-# Finite State Machines
 
 ## Motivation
 
@@ -66,9 +64,7 @@ As your program becomes more and more complex, it is better to separate your cod
 
 Mathematically, a deterministic finite state machine or a deterministic finite automaton is a quintuple
 
-$$
-<\Sigma, S, s_0, \delta, F>
-$$
+![eq](http://www.sciweavers.org/upload/Tex2Img_1664708273/render.png)
 
 > Well that's scary, let us unpack the tuple
 
